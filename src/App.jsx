@@ -3,6 +3,9 @@ import myPhoto from './assets/12302040701116_MohammadZaidMohammadSiddikPathan.jp
 import smartCityImg from './assets/projects/smart-city.png'
 import swrasImg from './assets/projects/swras.jpg'
 import serviceMgmtImg from './assets/projects/service-management.png'
+import aimlPdf from './assets/certificates/AIML-Codeunnati-Certificate.pdf'
+import IBMCert from './assets/certificates/IBM-Completion-Certificate-SkillsBuild.pdf'
+import maraCert from './assets/certificates/Codeunnati-Marathon.pdf'
 import { motion, useScroll, useSpring } from 'framer-motion'
 import {
   ArrowUp,
@@ -69,12 +72,32 @@ const projects = [
     image: serviceMgmtImg,
     github: 'https://github.com/zaidpathann/service_management_system.git',
   },
+  // {
+  //   title: 'AI Chatbot',
+  //   description:
+  //     'A modern chatbot UI focused on conversational flows, prompt handling, message states, and fast user interaction.',
+  //   tech: ['React', 'JavaScript', 'REST APIs', 'CSS'],
+  //   theme: 'from-stone-700 via-neutral-800 to-black',
+  // },
+]
+
+const certificates = [
   {
-    title: 'AI Chatbot',
-    description:
-      'A modern chatbot UI focused on conversational flows, prompt handling, message states, and fast user interaction.',
-    tech: ['React', 'JavaScript', 'REST APIs', 'CSS'],
-    theme: 'from-stone-700 via-neutral-800 to-black',
+    title: 'Artificial Intelligence & Machine Learning',
+    provider: 'Code Unnati Program by SAP & Edunet Foundation',
+    link: aimlPdf,  
+  },
+
+  {
+    title: 'IBM SkillsBuild Orientation',
+    provider: 'Edunet Foundation & IBM SkillsBuild',
+    link: IBMCert,
+  },
+
+  {
+    title: 'SAP Code Unnati Innovation Marathon 2025-26',
+    provider: 'SAP Code Unnati',
+    link: maraCert,
   },
 ]
 
@@ -358,7 +381,7 @@ function Projects() {
 function Education() {
   return (
     <Section id="education" eyebrow="Education" title="Academic background.">
-      <div className="timeline-card hover:-translate-y-2 hover:scale-[1.02] hover:border-indigo-500/40 hover:shadow-indigo-500/20 transition-all duration-300">
+      <div className="timeline-card hover:-translate-y-2 hover:scale-[1.02] hover:border-indigo-500/40 hover:shadow-indigo-500/20 transition-all duration-300 ">
         <div className="timeline-marker">
           <GraduationCap size={22} />
         </div>
@@ -395,10 +418,46 @@ function Education() {
   )
 }
 
+function Certificates() {
+  return (
+    <Section
+      id="certificates"
+      eyebrow="Certificates"
+      title="Certifications & Learning"
+    >
+      <div className="grid gap-5 md:grid-cols-3">
+        {certificates.map((certificate) => (
+          <div
+            key={certificate.title}
+            className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-cyan-400/30 hover:shadow-2xl hover:shadow-cyan-500/10"
+          >
+            <h3 className="text-xl font-semibold text-white">
+              {certificate.title}
+            </h3>
+
+            <p className="mt-3 text-slate-300">
+              {certificate.provider}
+            </p>
+
+            <a
+              href={certificate.link}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 px-4 py-2 text-sm text-cyan-400 transition-all duration-300 hover:bg-cyan-400 hover:text-black"
+            >
+              View Certificate
+            </a>
+          </div>
+        ))}
+      </div>
+    </Section>
+  )
+}
+
 function Resume() {
   return (
     <Section id="resume" eyebrow="Resume" title="Professional Resume.">
-      <div className="resume-panel">
+      <div className="resume-panel hover:-translate-y-2 hover:scale-[1.02] hover:border-indigo-500/40 hover:shadow-indigo-500/20 transition-all duration-300">
         <div>
           <p className="text-slate-300">
             A concise overview of my projects, technical skills, and development experience.
@@ -514,6 +573,7 @@ export default function App() {
         <Skills />
         <Projects />
         <Education />
+        <Certificates />
         <Resume />
         <Contact />
       </main>
