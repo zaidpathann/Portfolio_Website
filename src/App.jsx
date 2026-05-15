@@ -62,6 +62,7 @@ const projects = [
     tech: ['React', 'Express.js', 'SQL', 'JavaScript'],
     theme: 'from-neutral-700 via-stone-800 to-black',
     image: swrasImg,
+    github: 'https://github.com/zaidpathann/Smart_Workforce_Resource_Allocation_System.git',
   },
   {
     title: 'Service Management System',
