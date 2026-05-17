@@ -389,7 +389,7 @@ function Education() {
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.22em] text-blue-200">2023 - 2027</p>
           <h3 className="mt-2 text-2xl font-semibold text-white">Bachelor of Engineering - Computer Engineering </h3>
-          <p className="mt-2 text-slate-300">Madhuben And Bhanubhai Patel Institute Of Technology</p>
+          <p className="mt-2 text-slate-300">Madhuben And Bhanubhai Patel Institute Of Technology | Charutar Vidhya Mandal University</p>
           <p className="mt-4 text-slate-400">CGPA: 7.97 / 10.00 (After 5th Sem)</p>
         </div>
       </div><br />
@@ -400,7 +400,7 @@ function Education() {
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.22em] text-blue-200">2023</p>
           <h3 className="mt-2 text-2xl font-semibold text-white">12th - Gujarat Board </h3>
-          <p className="mt-2 text-slate-300">M.Y High School</p>
+          <p className="mt-2 text-slate-300">M.Y High School | Dahod, Gujarat</p>
           <p className="mt-4 text-slate-400">53.69%</p>
         </div>
       </div><br />
@@ -411,7 +411,7 @@ function Education() {
         <div>
           <p className="text-sm font-medium uppercase tracking-[0.22em] text-blue-200">2021</p>
           <h3 className="mt-2 text-2xl font-semibold text-white">10th - Gujarat Board </h3>
-          <p className="mt-2 text-slate-300">M.Y High School</p>
+          <p className="mt-2 text-slate-300">M.Y High School | Dahod, Gujarat</p>
           <p className="mt-4 text-slate-400">64.83%</p>
         </div>
       </div>
