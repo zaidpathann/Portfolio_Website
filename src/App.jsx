@@ -248,7 +248,7 @@ function Hero() {
             <a href="#projects" className="primary-button">
               View My Work
             </a>
-            <a href="\dist\Resume.pdf" className="secondary-button" target="_blank" rel="noreferrer">
+            <a href="Resume.pdf" className="secondary-button" target="_blank" rel="noreferrer">
               View My Resume
             </a>
           </div>
@@ -463,7 +463,7 @@ function Resume() {
           <p className="text-slate-300">
             A concise overview of my projects, technical skills, and development experience.
           </p>
-          <a href="\dist\Resume.pdf" download className="primary-button mt-7 inline-flex">
+          <a href="Resume.pdf" download className="primary-button mt-7 inline-flex">
             <Download size={18} />
             Download Resume
           </a>
