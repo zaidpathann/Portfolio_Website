@@ -39,7 +39,7 @@ const roles = ['MERN Stack Developer', 'Full Stack Developer', 'Computer Enginee
 
 const skillGroups = [
   { title: 'Frontend', icon: Code2, tone: 'tone-blue', skills: ['HTML', 'CSS', 'JavaScript', 'React'] },
-  { title: 'Backend', icon: Server, tone: 'tone-emerald', skills: ['Node.js', 'Express.js'] },
+  { title: 'Backend', icon: Server, tone: 'tone-emerald', skills: ['Node.js','Django', 'Express.js'] },
   { title: 'Database', icon: Database, tone: 'tone-violet', skills: ['MongoDB', 'SQL'] },
   { title: 'Programming', icon: Terminal, tone: 'tone-amber', skills: ['Python', 'JavaScript'] },
   { title: 'Tools', icon: GitBranch, tone: 'tone-slate', skills: ['Git', 'GitHub', 'REST APIs','Postman'] },
